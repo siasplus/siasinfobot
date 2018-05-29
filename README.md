@@ -1,2 +1,1 @@
-# cryptonow-info
-crypto now bot free
+# SIAS Info Bot
