@@ -11,7 +11,7 @@ bot = telebot.TeleBot("561204105:AAHEdhe55B4KV1zp5XEGQFmY4PnXgIeyDOw")
 def handle_start(message):
     user_markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
     user_markup.row('💬 Начать 💬')
-    bot.send_message(message.from_user.id, '👋 Приветствую {0}! Я чат-бот, который ознакомит тебя с миром Криптовалют.\n\n'
+    bot.send_message(message.from_user.id, '👋 Приветствую {0}! тест 2. Я чат-бот, который ознакомит тебя с миром Криптовалют.\n\n'
                                            'В Чем моя уникальность ?\n\n'
                                            '- Ознакомлю с Криптовалютой\n'
                                            '- Покажу с чего начать\n'
