@@ -84,7 +84,7 @@ def handle_text(message):
     user_markup.row('📊 Биржи 📊', '💰 Кошельки 💰')
     user_markup.row('📈 Курсы 📈', '🔖 Новости 🔖')
     user_markup.row('☎ Контакты ☎', '💎ЗАРАБОТАТЬ')
-        bot.send_message(message.from_user.id, 'Вы на верном пути', reply_markup=user_markup)
+        bot.send_message(message.from_user.id, 'О биткоине ', reply_markup=user_markup)
     elif message.text == '🅱 Биткоин': #1
             user_markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
             user_markup.row('Особенности')
