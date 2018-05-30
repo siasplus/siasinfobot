@@ -264,7 +264,6 @@ def handle_text(message):
         user_markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
         user_markup.row('Большие международные')
         user_markup.row('🇺🇦 Украина','🇷🇺 Россия')
-        user_markup.row('🇵🇼 Казахстан')
         user_markup.row('💎 НАЧАТЬ ЗАРАБАТЫВАТЬ')
         user_markup.row('🔙 Вернуться "Главное меню"')
         bot.send_message(message.from_user.id, "В мире есть множество Крипто-бирж но как в любой индустрии есть лидеры, с "
@@ -280,7 +279,7 @@ def handle_text(message):
         url_button2 = types.InlineKeyboardButton(text="Poloniex", url="https://poloniex.com")
         url_button3 = types.InlineKeyboardButton(text="Bittrex", url="https://bittrex.com")
         url_button4 = types.InlineKeyboardButton(text="Bitfinex", url="https://www.bitfinex.com")
-        url_button5 = types.InlineKeyboardButton(text="Livecoin", url="https://www.livecoin.net/ru/site/login")
+        url_button5 = types.InlineKeyboardButton(text="Binance", url="https://www.binance.com")
         url_button6 = types.InlineKeyboardButton(text="Kraken", url="https://www.kraken.com")
         keyboard.add(url_button2,url_button3)
         keyboard.add(url_button4,url_button5)
@@ -299,13 +298,6 @@ def handle_text(message):
                                           '1.	http://YoBit.Net\n'
                                           '2.	http://EXMO.com \n'
                                           '3.	Список обменников работающих СберБанк - BTC \n'
-                                          'https://www.bestchange.ru/sberbank-to-bitcoin.html \n\n')
-    elif message.text=='🇵🇼 Казахстан':
-        bot.send_message(message.chat.id, '📊 Биржи 📊 такого формата рекомендуем использовать только для Ввода или Вывода \n'
-                                          'Криптовалюты на 🇷🇺 Рубль 🇵🇼 Тенге. \n\n'
-                                          '1.	https://1wm.kz\n'
-                                          '2.	https://pmcash.kz/  \n'
-                                          '3.	Список обменников работающих СберБанк - BTC\n'
                                           'https://www.bestchange.ru/sberbank-to-bitcoin.html \n\n')
     elif message.text =='💎 НАЧАТЬ ЗАРАБАТЫВАТЬ 💎': #10
         user_markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
